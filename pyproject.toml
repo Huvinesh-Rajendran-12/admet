@@ -1,0 +1,17 @@
+[project]
+name = "admet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "numpy>=2.2.3",
+    "polars>=1.22.0",
+    "pytdc>=0.3.6",
+    "rdkit>=2024.9.5",
+    "requests>=2.32.3",
+    "torch>=2.6.0",
+    "torch-geometric>=2.6.1",
+    "torchvision>=0.21.0",
+]
