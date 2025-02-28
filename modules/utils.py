@@ -6,9 +6,9 @@ def set_device() -> torch.device:
 
 def set_seed(seed: int = 42) -> None:
     print(f"Seed: {seed}, CUDA available: {torch.cuda.is_available()}, MPS available: {torch.mps.is_available()}")
-    print(f"CUDA device count: {torch.cuda.device_count()}, Current device: {torch.cuda.current_device()}")
     torch.manual_seed(seed)
     if torch.cuda.is_available():
+        print(f"CUDA device count: {torch.cuda.device_count()}, Current device: {torch.cuda.current_device()}")
         torch.cuda.init()
         torch.cuda.manual_seed_all(seed)
     elif torch.mps.is_available():

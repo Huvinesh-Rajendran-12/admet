@@ -1,0 +1,19 @@
+{
+    "data_root": "data",
+    "add_h": false,
+    "calculate_charges": false,
+    "use_3d": false,
+    "augment": false,
+    "cache_graphs": false,
+    "hidden_dim": 128,
+    "num_layers": 3,
+    "dropout": 0.2,
+    "use_batch_norm": true,
+    "batch_size": 32,
+    "n_epochs": 5,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "split_ratio": 0.8,
+    "seed": 42,
+    "output_dir": "results"
+}
